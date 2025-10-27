@@ -1,6 +1,6 @@
 My Learning (MVVM SwiftUI App)
 
-![App Icon](Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png)
+![App Icon](LearningApp_MVVM/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png)
 
 An iOS learning tracker app built using SwiftUI and the MVVM architecture.
 The app helps users set learning goals, track daily progress, and visualize their activity in a beautiful and minimal interface.
