@@ -14,7 +14,6 @@
 		5C284DAD2EB009330011633E /* AllActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DAC2EB009330011633E /* AllActivity.swift */; };
 		5C284DAF2EB00A130011633E /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DAE2EB00A130011633E /* ActivityViewModel.swift */; };
 		5C284DB22EB00A8D0011633E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DB12EB00A8D0011633E /* Colors.swift */; };
-		5C284DB42EB00F970011633E /* ActivityComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DB32EB00F970011633E /* ActivityComponents.swift */; };
 		5C284DB92EB012180011633E /* DateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DB82EB012180011633E /* DateButton.swift */; };
 		5C284DBB2EB0129F0011633E /* WeekCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DBA2EB0129F0011633E /* WeekCalendarView.swift */; };
 		5C284DBD2EB0133A0011633E /* SummaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DBC2EB0133A0011633E /* SummaryCard.swift */; };
@@ -31,7 +30,6 @@
 		5C284DAC2EB009330011633E /* AllActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllActivity.swift; sourceTree = "<group>"; };
 		5C284DAE2EB00A130011633E /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
 		5C284DB12EB00A8D0011633E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		5C284DB32EB00F970011633E /* ActivityComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityComponents.swift; sourceTree = "<group>"; };
 		5C284DB82EB012180011633E /* DateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateButton.swift; sourceTree = "<group>"; };
 		5C284DBA2EB0129F0011633E /* WeekCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekCalendarView.swift; sourceTree = "<group>"; };
 		5C284DBC2EB0133A0011633E /* SummaryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCard.swift; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 				5C284DA82EB009110011633E /* SecondPage.swift */,
 				5C284DAA2EB009220011633E /* LearningGoal.swift */,
 				5C284DAC2EB009330011633E /* AllActivity.swift */,
-				5C284DB32EB00F970011633E /* ActivityComponents.swift */,
 				5C284DB52EB0117E0011633E /* SubViews */,
 			);
 			path = Views;
@@ -208,7 +205,6 @@
 				5C284DA92EB009110011633E /* SecondPage.swift in Sources */,
 				5C284DAF2EB00A130011633E /* ActivityViewModel.swift in Sources */,
 				5C284DAD2EB009330011633E /* AllActivity.swift in Sources */,
-				5C284DB42EB00F970011633E /* ActivityComponents.swift in Sources */,
 				5C284DBB2EB0129F0011633E /* WeekCalendarView.swift in Sources */,
 				5C284DBF2EB013FD0011633E /* MainActionButton.swift in Sources */,
 				5C284DA52EB0086F0011633E /* ActivityManager.swift in Sources */,
