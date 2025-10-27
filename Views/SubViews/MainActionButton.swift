@@ -51,13 +51,15 @@ struct MainActionButton: View {
                     Circle()
                         .fill(bgColor)
                         // Soft glowing shadow for emphasis
-                        .shadow(color: Color.orange.opacity(0.5), radius: 10)
+                        .shadow(color: Color.gray.opacity(0.5), radius: 30)
                         // Glass-like transparent effect for styling
-                        .glassEffect(.clear.tint(.buttonGlow))
+                        .glassEffect(.clear.tint(.clear))
                 )
         }
         // Disable if already learned or freezed
         .disabled(isDisabled)
+//        .shadow(color: Color.gray.opacity(0.5), radius: 10)
+
     }
 }
 

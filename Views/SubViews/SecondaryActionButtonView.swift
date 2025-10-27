@@ -35,10 +35,13 @@ struct SecondaryActionButtonView: View {
         }
         .buttonStyle(.plain) // Remove default button effects
         .shadow(
-            color: Color.freezedCyan.opacity(0.4),
+            color: Color.cyan.opacity(0.4),
             radius: 40
         ) // Adds a soft cyan glow
         .disabled(isDisabled) // Disable if user cannot freeze
+        .shadow(color: Color.cyan.opacity(0.5), radius: 10)
+        // Glass-like transparent effect for styling
+        .glassEffect(.clear.tint(.clear))
     }
 }
 

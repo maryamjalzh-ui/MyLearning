@@ -144,7 +144,7 @@ struct MonthView: View {
 // === 5. FullScreenCalendarView ===
 struct FullScreenCalendarView: View {
     @Environment(\.calendar) var calendar
-    let monthsRange = -0...12 // Number of months to display (current + next 12)
+    let monthsRange = -120...120 // Number of months to display (current + next 12)
 
     var body: some View {
         ScrollViewReader { proxy in
@@ -154,7 +154,7 @@ struct FullScreenCalendarView: View {
                     ForEach(monthsRange, id: \.self) { offset in
                         if let month = calendar.date(byAdding: .month, value: offset, to: Date()) {
                             MonthView(month: month)
-                                .id(month)
+                                .id(calendar.date(from: calendar.dateComponents([.year, .month], from: month))!)
                         }
                     }
                 }
@@ -162,18 +162,17 @@ struct FullScreenCalendarView: View {
             }
             .background(Color(.systemBackground).ignoresSafeArea())
             .onAppear {
-                // Automatically scroll to the current month on appear
-                if let todayMonth = calendar.date(byAdding: .month, value: 0, to: Date()) {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                        withAnimation(.easeInOut) {
-                            proxy.scrollTo(todayMonth, anchor: .center)
-                        }
+                // نحسب أول يوم في الشهر الحالي بدقة
+                let currentMonth = calendar.date(from: calendar.dateComponents([.year, .month], from: Date()))!
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.10) {
+                        proxy.scrollTo(currentMonth, anchor: .center)
                     }
                 }
             }
+
         }
     }
-}
+
 
 // === 6. Main AllActivity View ===
 struct AllActivity: View {
