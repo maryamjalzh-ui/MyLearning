@@ -10,35 +10,45 @@ import SwiftUI
 import Combine
 
 // MARK: - App State
+// Represents the status of each learning day
 enum ActivityStatus: Codable, Equatable {
-    case Default
-    case Logged
-    case Freezed
+    case Default   // No activity logged
+    case Logged    // Day marked as learned
+    case Freezed   // Day marked as freezed (paused)
 }
 
+// MARK: - ActivityManager
+// Central class responsible for managing all learning activity data and progress tracking
 class ActivityManager: ObservableObject {
-    @Published var startOfWeek: Date
-    @Published var selectedDate: Date
-    @Published var dailyStatus: [Date: ActivityStatus]
+    @Published var startOfWeek: Date               // The start date of the currently displayed week
+    @Published var selectedDate: Date              // The currently selected date
+    @Published var dailyStatus: [Date: ActivityStatus] // Dictionary mapping each date to its activity status
     
-    // ✅ عدادات الهدف الحالي فقط
-    @Published var currentGoalLearned = 0
-    @Published var currentGoalFreezed = 0
+    // ✅ Goal-specific counters for the current learning goal
+    @Published var currentGoalLearned = 0          // Number of days marked as "learned"
+    @Published var currentGoalFreezed = 0          // Number of days marked as "freezed"
 
+    // MARK: - Initializer
     init() {
-        let today = Date().startOfDay!
-        let weekStart = today.startOfWeek!
+        let today = Date().startOfDay!             // Get today's date (without time)
+        let weekStart = today.startOfWeek!         // Determine the start of the current week
         self.startOfWeek = weekStart
         self.selectedDate = today
-        self.dailyStatus = [:]
+        self.dailyStatus = [:]                     // Initialize with no activity data
     }
 
+    // MARK: - Computed Properties
+    // Total number of learned days (from all history)
     var daysLearned: Int { dailyStatus.values.filter { $0 == .Logged }.count }
+    // Total number of freezed days (from all history)
     var daysFreezed: Int { dailyStatus.values.filter { $0 == .Freezed }.count }
 
+    // MARK: - Update Daily Status
+    // Updates the activity status for the selected date
     func updateStatus(to status: ActivityStatus) {
         dailyStatus[selectedDate.startOfDay!] = status
 
+        // Increment the counters based on status
         switch status {
         case .Logged:
             currentGoalLearned += 1
@@ -49,25 +59,12 @@ class ActivityManager: ObservableObject {
         }
     }
     
+    // MARK: - Reset Counters
+    // Resets goal-specific counters (used when starting a new goal)
     func resetCountersForNewGoal() {
         currentGoalLearned = 0
         currentGoalFreezed = 0
     }
 }
 
-// MARK: - Date Extensions
-extension Date {
-    static let calendar = Calendar.current
-    var startOfWeek: Date? {
-        Date.calendar.date(from: Date.calendar.dateComponents([.yearForWeekOfYear, .weekOfYear], from: self))
-    }
-    var startOfDay: Date? { Date.calendar.startOfDay(for: self) }
-    var dayBefore: Date? { Date.calendar.date(byAdding: .day, value: -1, to: self) }
-    var dayAfter: Date? { Date.calendar.date(byAdding: .day, value: 1, to: self) }
-    var dayAbbreviation: String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "EEE"
-        return formatter.string(from: self).uppercased()
-    }
-    var dayNumber: Int { Date.calendar.component(.day, from: self) }
-}
+

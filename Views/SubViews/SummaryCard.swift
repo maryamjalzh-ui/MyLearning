@@ -7,6 +7,16 @@ struct SummaryCard: View {
     let icon: String
     let iconColor: Color
 
+    // MARK: - Dynamic plural logic
+    // If the number is 1, use "Day" instead of "Days"
+    var pluralLabel: String {
+        if value == 1 {
+            return label.replacingOccurrences(of: "Days", with: "Day")
+        } else {
+            return label
+        }
+    }
+
     var body: some View {
         HStack(spacing: 10) {
             Image(systemName: icon)
@@ -19,7 +29,9 @@ struct SummaryCard: View {
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(.primaryText)
-                Text(label)
+                
+                // Use pluralLabel instead of plain label
+                Text(pluralLabel)
                     .font(.caption)
                     .foregroundColor(.primaryText)
             }
@@ -34,5 +46,8 @@ struct SummaryCard: View {
 }
 
 #Preview {
-    SummaryCard(value: 5, label: "Days Learned", color: .orange, icon: "flame.fill", iconColor: .accentOrange)
+    VStack(spacing: 15) {
+        SummaryCard(value: 1, label: "Days Learned", color: .orange, icon: "flame.fill", iconColor: .accentOrange)
+        SummaryCard(value: 3, label: "Days Freezed", color: .cyan, icon: "cube.fill", iconColor: .freezedCyan)
+    }
 }

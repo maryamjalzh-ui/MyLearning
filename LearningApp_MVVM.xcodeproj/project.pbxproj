@@ -19,6 +19,7 @@
 		5C284DBD2EB0133A0011633E /* SummaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DBC2EB0133A0011633E /* SummaryCard.swift */; };
 		5C284DBF2EB013FD0011633E /* MainActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DBE2EB013FD0011633E /* MainActionButton.swift */; };
 		5C284DC12EB0143F0011633E /* SecondaryActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DC02EB0143F0011633E /* SecondaryActionButtonView.swift */; };
+		5C284DC32EB02C410011633E /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DC22EB02C410011633E /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		5C284DBC2EB0133A0011633E /* SummaryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCard.swift; sourceTree = "<group>"; };
 		5C284DBE2EB013FD0011633E /* MainActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainActionButton.swift; sourceTree = "<group>"; };
 		5C284DC02EB0143F0011633E /* SecondaryActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryActionButtonView.swift; sourceTree = "<group>"; };
+		5C284DC22EB02C410011633E /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				5C284DA42EB0086F0011633E /* ActivityManager.swift */,
+				5C284DC22EB02C410011633E /* DateExtension.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C284DBD2EB0133A0011633E /* SummaryCard.swift in Sources */,
+				5C284DC32EB02C410011633E /* DateExtension.swift in Sources */,
 				5C284DAB2EB009220011633E /* LearningGoal.swift in Sources */,
 				5C284DB22EB00A8D0011633E /* Colors.swift in Sources */,
 				5C284DC12EB0143F0011633E /* SecondaryActionButtonView.swift in Sources */,
