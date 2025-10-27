@@ -6,8 +6,37 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5C284DA52EB0086F0011633E /* ActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DA42EB0086F0011633E /* ActivityManager.swift */; };
+		5C284DA72EB009010011633E /* FirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DA62EB009010011633E /* FirstPage.swift */; };
+		5C284DA92EB009110011633E /* SecondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DA82EB009110011633E /* SecondPage.swift */; };
+		5C284DAB2EB009220011633E /* LearningGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DAA2EB009220011633E /* LearningGoal.swift */; };
+		5C284DAD2EB009330011633E /* AllActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DAC2EB009330011633E /* AllActivity.swift */; };
+		5C284DAF2EB00A130011633E /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DAE2EB00A130011633E /* ActivityViewModel.swift */; };
+		5C284DB22EB00A8D0011633E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DB12EB00A8D0011633E /* Colors.swift */; };
+		5C284DB42EB00F970011633E /* ActivityComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DB32EB00F970011633E /* ActivityComponents.swift */; };
+		5C284DB92EB012180011633E /* DateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DB82EB012180011633E /* DateButton.swift */; };
+		5C284DBB2EB0129F0011633E /* WeekCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DBA2EB0129F0011633E /* WeekCalendarView.swift */; };
+		5C284DBD2EB0133A0011633E /* SummaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DBC2EB0133A0011633E /* SummaryCard.swift */; };
+		5C284DBF2EB013FD0011633E /* MainActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DBE2EB013FD0011633E /* MainActionButton.swift */; };
+		5C284DC12EB0143F0011633E /* SecondaryActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C284DC02EB0143F0011633E /* SecondaryActionButtonView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		5C284D922EB003310011633E /* LearningApp_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningApp_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C284DA42EB0086F0011633E /* ActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityManager.swift; sourceTree = "<group>"; };
+		5C284DA62EB009010011633E /* FirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPage.swift; sourceTree = "<group>"; };
+		5C284DA82EB009110011633E /* SecondPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPage.swift; sourceTree = "<group>"; };
+		5C284DAA2EB009220011633E /* LearningGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningGoal.swift; sourceTree = "<group>"; };
+		5C284DAC2EB009330011633E /* AllActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllActivity.swift; sourceTree = "<group>"; };
+		5C284DAE2EB00A130011633E /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
+		5C284DB12EB00A8D0011633E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		5C284DB32EB00F970011633E /* ActivityComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityComponents.swift; sourceTree = "<group>"; };
+		5C284DB82EB012180011633E /* DateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateButton.swift; sourceTree = "<group>"; };
+		5C284DBA2EB0129F0011633E /* WeekCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekCalendarView.swift; sourceTree = "<group>"; };
+		5C284DBC2EB0133A0011633E /* SummaryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCard.swift; sourceTree = "<group>"; };
+		5C284DBE2EB013FD0011633E /* MainActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainActionButton.swift; sourceTree = "<group>"; };
+		5C284DC02EB0143F0011633E /* SecondaryActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryActionButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +61,10 @@
 		5C284D892EB003310011633E = {
 			isa = PBXGroup;
 			children = (
+				5C284DB02EB00A1F0011633E /* Resources */,
+				5C284DA22EB0041A0011633E /* Views */,
+				5C284DA12EB0040E0011633E /* ViewModels */,
+				5C284DA02EB003F10011633E /* Models */,
 				5C284D942EB003310011633E /* LearningApp_MVVM */,
 				5C284D932EB003310011633E /* Products */,
 			);
@@ -43,6 +76,55 @@
 				5C284D922EB003310011633E /* LearningApp_MVVM.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5C284DA02EB003F10011633E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C284DA42EB0086F0011633E /* ActivityManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5C284DA12EB0040E0011633E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5C284DAE2EB00A130011633E /* ActivityViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5C284DA22EB0041A0011633E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5C284DA62EB009010011633E /* FirstPage.swift */,
+				5C284DA82EB009110011633E /* SecondPage.swift */,
+				5C284DAA2EB009220011633E /* LearningGoal.swift */,
+				5C284DAC2EB009330011633E /* AllActivity.swift */,
+				5C284DB32EB00F970011633E /* ActivityComponents.swift */,
+				5C284DB52EB0117E0011633E /* SubViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5C284DB02EB00A1F0011633E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5C284DB12EB00A8D0011633E /* Colors.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5C284DB52EB0117E0011633E /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				5C284DB82EB012180011633E /* DateButton.swift */,
+				5C284DBA2EB0129F0011633E /* WeekCalendarView.swift */,
+				5C284DBC2EB0133A0011633E /* SummaryCard.swift */,
+				5C284DBE2EB013FD0011633E /* MainActionButton.swift */,
+				5C284DC02EB0143F0011633E /* SecondaryActionButtonView.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +201,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C284DBD2EB0133A0011633E /* SummaryCard.swift in Sources */,
+				5C284DAB2EB009220011633E /* LearningGoal.swift in Sources */,
+				5C284DB22EB00A8D0011633E /* Colors.swift in Sources */,
+				5C284DC12EB0143F0011633E /* SecondaryActionButtonView.swift in Sources */,
+				5C284DA92EB009110011633E /* SecondPage.swift in Sources */,
+				5C284DAF2EB00A130011633E /* ActivityViewModel.swift in Sources */,
+				5C284DAD2EB009330011633E /* AllActivity.swift in Sources */,
+				5C284DB42EB00F970011633E /* ActivityComponents.swift in Sources */,
+				5C284DBB2EB0129F0011633E /* WeekCalendarView.swift in Sources */,
+				5C284DBF2EB013FD0011633E /* MainActionButton.swift in Sources */,
+				5C284DA52EB0086F0011633E /* ActivityManager.swift in Sources */,
+				5C284DA72EB009010011633E /* FirstPage.swift in Sources */,
+				5C284DB92EB012180011633E /* DateButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,8 +346,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 84L8W67T2J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "My Learning";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,8 +379,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 84L8W67T2J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "My Learning";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

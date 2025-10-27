@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct LearningApp_MVVMApp: App {
+    @StateObject private var activityManager = ActivityManager()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FirstPage()
+                .environmentObject(activityManager)
         }
     }
 }
