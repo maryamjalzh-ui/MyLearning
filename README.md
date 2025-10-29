@@ -21,33 +21,6 @@ Tech Stack:
 • UIKit Integration (UICalendarView)
 • Dynamic Colors & Themes
 
-Project Structure:
-
-LearningApp_MVVM/
-│
-├── Models/
-│   └── ActivityManager.swift
-│
-├── ViewModels/
-│   └── ActivityViewModel.swift
-│
-├── Views/
-│   ├── FirstPage.swift
-│   ├── SecondPage.swift
-│   ├── LearningGoal.swift
-│   └── AllActivity.swift
-│
-├── Views/Subviews/
-│   ├── DateButton.swift
-│   ├── SummaryCard.swift
-│   ├── MainActionButton.swift
-│   ├── WeekCalendarView.swift
-│   └── SecondaryActionButtonView.swift
-│
-├── Resources/
-│   └── Colors.swift
-│
-└── LearningApp_MVVMApp.swift
 
 
 Future Improvements:
